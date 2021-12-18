@@ -1,0 +1,504 @@
+$bakak: 'Bakbak One', cursive
+$hachi: 'Hachi Maru Pop', cursive
+$mochiy: 'Mochiy Pop One', sans-serif
+$popins: 'Poppins', sans-serif
+$roboto: 'Roboto Slab', serif
+$main_green_color: #00FFE0
+$main_pink_color: #FF0099
+$full_stack_color: rgb(145, 4, 255)
+$orange: #F86919
+*,*::before,*::after
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    text-decoration: none
+    list-style: none
+html
+    scroll-behavior: smooth
+.head
+    min-height: 80vh
+    width: 100%
+    background: #111
+    .navbar
+        position: fixed
+        height: 10vh
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 10px
+        transition: all .5s
+        .title
+            height: 100%
+            width: 80%
+            display: flex
+            align-items: center
+            justify-content: start
+            padding-left: 20px
+            transition: all .5s
+            .main_title
+                font-size: 20px
+                font-family: $roboto
+                font-weight: 500
+                color: #fff
+        .hamp
+            height: 50px
+            width: 55px
+            display: flex
+            padding: 2px
+            align-items: end
+            justify-content: space-around
+            flex-direction: column
+            z-index: 100
+            cursor: pointer
+            transition: all .5s
+            .link
+                height: 7px
+                width: 47px
+                background: $main_green_color
+                border-radius: 3px
+                transition: all .5s
+                &:nth-child(1)
+                    background: #111
+                    border: 3px solid $main_green_color
+                    height: 9px
+                    width: 25px
+        .hamp_links_open
+            .link
+                &:nth-child(1)
+                    display: none
+                &:nth-child(2)
+                    transform: rotate(45deg)
+                    position: relative
+                    top: 9px
+                &:nth-child(3)
+                    transform: rotate(-45deg)
+                    position: relative
+                    bottom: 15px
+
+        .ulbar
+            background: #111
+            height: 100vh
+            width: 100%
+            position: fixed
+            top: 0
+            right: 100%
+            display: flex
+            align-items: start
+            justify-content: start
+            flex-direction: column
+            padding: 25px
+            transition: all .5s
+            img
+                margin-bottom: 20px
+            .liLinks
+                margin-top: 10px
+                .ulLinks
+                    color: #ffffff
+                    font-family: $roboto
+                    font-size: 25px
+                .ulLinksOpen
+                    color: #5519f8bb
+        .ulbarOpen
+            right: 0
+            transition: all .5s
+    .main_content_header
+        padding-top: 20vh
+        .main_talk
+            min-height: 40vh
+            width: 100%
+            display: flex
+            align-items: start
+            padding: 30px
+            padding-left: 45px
+            justify-content: space-around
+            flex-direction: column
+            transition: all .5s
+            h2 , h3 ,h4
+                color: #ffffff
+                font-family: $roboto
+            h2
+                font-size: 36px
+            .span
+                color: $main_pink_color
+            .spanP
+                color: $full_stack_color
+        .image_logo
+            height: 40vh
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+            padding-right: 10px
+    .navbar_Open
+        position: fixed
+        z-index: 100
+        top: 0
+        left: 0
+        background: #000000e1
+        z-index: 20
+        transition: all .5s
+        height: 10vh
+        .title
+            .main_title
+                color: #fff
+.headlight
+    background: #fff
+
+.work,.community , .Resume,.about_me
+    background: #111
+    min-height: 200vh
+    width: 100%
+    display: flex
+    justify-content: space-around
+    align-items: center
+    flex-direction: column
+    padding: 20px
+    .main_work_title_and_logo,
+    .main_community_title_and_logo,
+    .main_resume_title_and_logo,
+    .main_about_title_and_logo
+        height: 60px
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: start
+        margin-bottom: 40px
+        .work_section_title ,
+        .community_section_title,
+        .resume_section_title,
+        .about_section_title,
+            font-family: $roboto
+            color: #ffffff
+            z-index: 1
+            position: relative
+            button: 10px
+        .curkil
+            height: 50px
+            width: 50px
+            background: #5519f8bb
+            border-radius: 50%
+            position: relative
+            left: 30px
+            button: 20px
+        .Skills
+            .skills_title
+                color: #fff
+    .all_porjects,.all_community_stuff
+        width: 80%
+        min-height: 100vh
+        display: flex
+        align-items: center
+        justify-content: space-around
+        flex-direction: column
+        .workone,
+        .workTow,
+        .workThree,
+        .workFour,
+        .workFive,
+        .community_one,
+        .community_tow
+            height: 350px
+            width: 225px
+            margin-top: 20px
+            border-radius: 27px
+            border: 5px solid #5319F8
+            display: flex
+            align-items: center
+            justify-content: center
+            color: #fff
+    .all_porjects
+        .workContainer
+            transition: all .5s
+            width: 330px
+            height: 240px
+            a
+                color: #fff
+                display: flex
+                align-items: center
+                justify-content: center
+                height: 240px
+                width: 330px
+                padding: 5px
+                img
+                    border-radius: 15px
+                    height: 100%
+                    width: 100%
+.Resume
+    .Skills
+        .skills_title
+            color: #fff
+.community
+    min-height: 60vh
+    width: 100%
+    padding: 20px
+    background: #111
+    .main_community_title_and_logo
+        .curkil
+            background: #19F8CF
+    .all_community_stuff
+        .community_one
+            height: 540px
+            border-color: #19F8CF
+        .community_tow
+            border-color: #19F8CF
+    .all_community_stuff
+        .communityStuff
+            height: 300px
+            width: 300px
+.Resume
+    min-height: 140vh
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    .Skills
+        width: 60%
+        height: 50px
+        display: flex
+        justify-content: start
+        align-items: center
+        margin-bottom: 20px
+        .skills_title
+            font-family: $popins
+            font-weight: 500
+    .main_resume_title_and_logo
+        .curkil
+            background: #F819B9
+    .main_skills_comtainer
+        height: 80%
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: space-around
+        flex-direction: column
+        .Design,
+        .Development,
+        .Tools,
+        .Linux
+            display: flex
+            align-items: start
+            justify-content: center
+            flex-direction: column
+            height: 250px
+            width: 200px
+            margin-bottom: 10px
+        .Design,.Development, .Tools ,.Linux
+            .Design_title ,.Development_title,.Tools_title,.Linux_title
+                color: #F819B9
+                margin-bottom: 15px
+            .Design_ulbar,
+            .development_ulbar,
+            .Tools_ulbar,
+            .Linux_ulbar
+                height: 80%
+                li
+                    font-family: $roboto
+                    padding: 5px
+                    color: #fff
+            .Tools_ulbar
+                height: 90%
+    .Download_resume
+        min-height: 100px
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        button
+            width: 80%
+            height: 35px
+            color: #F819B9
+            border: 2px solid #F819B9
+            border-radius: 10px
+            font-size: 1rem
+            font-family: $roboto
+            background: none
+.about_me
+    min-height: 160vh
+    width: 100%
+    display: flex
+    align-items: start
+    justify-content: start
+    .main_about_title_and_logo
+        .curkil
+            background: #F86919
+    .main_content_about_me
+        height: 100%
+        width: 100%
+        padding: 20px
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        .whoAmI,
+        .whatAmI_passionate_about,
+        .WhatDoIDo
+            height: 30%
+            display: flex
+            align-items: center
+            justify-content: space-around
+            flex-direction: column
+            margin-bottom: 100px
+            .who_am_i,
+            .what_am_i_passionate_about,
+            .what_do_i_do
+                font-family: $roboto
+                margin-bottom: 20px
+                font-size: 48px
+                color: $orange
+            .answer_who_am_i,
+            .answerOne_what_am_i_passionate_about,
+            .answerTow_what_am_i_passionate_about,
+            .answer_what_do_i_do
+                font-family: $roboto
+                font-size: 24px
+                color: #fff
+        .whatAmI_passionate_about
+            height: 40%
+.letTalk
+    height: 100vh
+    width: 100%
+    padding: 20px
+    background: #111
+    .main_contact_container
+        height: 100px
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: start
+        .O
+            height: 50px
+            width: 50px
+            border-radius: 50%
+            background: lightgreen
+        .contact_title_main
+            font-family: $roboto
+            position: relative
+            right: 30px
+            top: 6px
+            color: #fff
+    .main_lets_talk_section
+        margin-top: 10px
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        height: 80%
+        padding: 20px
+        .main_my_email
+            width: 100%
+            height: 70px
+            display: flex
+            align-items: center
+            justify-content: space-around
+            flex-direction: column
+            h4
+                font-family: $roboto
+                color: #fff
+        .form_lets_talk
+            height: 80%
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: start
+            flex-direction: column
+            input , textarea
+                width: 100%
+                margin-top: 20px
+                height: 50px
+                background: none
+                border: 3px solid lightgreen
+                border-radius: 15px
+                padding: 20px
+                font-size: 18px
+                color: #ffffff
+                font-family: $popins
+                font-weight: 600
+                &:focus
+                    outline: none
+            textarea
+                height: 50%
+            .sub
+                padding: 0
+@media screen and ( min-width: 1120px )
+    .head
+        .navbar
+            .hamp
+                display: none
+            .ulbar
+                position: static
+                top: 0
+                left: 0
+                display: flex
+                align-items: center
+                justify-content: space-around
+                flex-direction: row
+                height: 100%
+                background: none
+                .liLinks
+                    .ulLinks
+                        font-size: 18px
+                img
+                    display: none
+        .navbar_Open
+            height: 8vh
+            .ulbar
+                .liLinks
+                    .ulLinks
+        .main_content_header
+            display: flex
+            height: 80vh
+            justify-content: space-around
+            align-items: center
+    .work
+        .all_porjects
+            display: grid
+            grid-gap: 20px
+            grid-template-columns: repeat(3, 1fr)
+            .workContainer
+                transition: all .5s
+                width: 330px
+                height: 240px
+                a
+                    color: #fff
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    height: 240px
+                    width: 330px
+                    padding: 5px
+                    img
+                        border-radius: 15px
+                        height: 100%
+                        width: 100%
+            .workContainerHover
+                transition: all .5s
+                background: #fff
+    .community
+        display: flex
+        align-items: center
+        justify-content: center
+        .all_community_stuff
+            display: grid
+            grid-template-columns: repeat(3,1fr)
+            .communityStuff
+                height: 300px
+                width: 300px
+    .Resume
+        min-width: 100vh
+        .main_skills_comtainer
+            display: grid
+            place-items: center
+            grid-template-columns: repeat(4,1fr)
+            margin-top: 100px
+            grid-gap: 20px
+        .Download_resume
+            width: 80%
+            button
+                width: 80%
+                transition: all .5s
+                &:hover
+                    background: $main_pink_color
+                    color: #111
+                    transition: all .5s

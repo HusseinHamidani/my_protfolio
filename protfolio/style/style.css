@@ -1,0 +1,1028 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.head {
+  min-height: 80vh;
+  width: 100%;
+  background: #111;
+}
+
+.head .navbar {
+  position: fixed;
+  height: 10vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.head .navbar .title {
+  height: 100%;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding-left: 20px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.head .navbar .title .main_title {
+  font-size: 20px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
+  color: #fff;
+}
+
+.head .navbar .hamp {
+  height: 50px;
+  width: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 100;
+  cursor: pointer;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.head .navbar .hamp .link {
+  height: 7px;
+  width: 47px;
+  background: #00FFE0;
+  border-radius: 3px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.head .navbar .hamp .link:nth-child(1) {
+  background: #111;
+  border: 3px solid #00FFE0;
+  height: 9px;
+  width: 25px;
+}
+
+.head .navbar .hamp_links_open .link:nth-child(1) {
+  display: none;
+}
+
+.head .navbar .hamp_links_open .link:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: relative;
+  top: 9px;
+}
+
+.head .navbar .hamp_links_open .link:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  position: relative;
+  bottom: 15px;
+}
+
+.head .navbar .ulbar {
+  background: #111;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 25px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.head .navbar .ulbar img {
+  margin-bottom: 20px;
+}
+
+.head .navbar .ulbar .liLinks {
+  margin-top: 10px;
+}
+
+.head .navbar .ulbar .liLinks .ulLinks {
+  color: #ffffff;
+  font-family: "Roboto Slab", serif;
+  font-size: 25px;
+}
+
+.head .navbar .ulbar .liLinks .ulLinksOpen {
+  color: #5519f8bb;
+}
+
+.head .navbar .ulbarOpen {
+  right: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.head .main_content_header {
+  padding-top: 20vh;
+}
+
+.head .main_content_header .main_talk {
+  min-height: 40vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding: 30px;
+  padding-left: 45px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.head .main_content_header .main_talk h2, .head .main_content_header .main_talk h3, .head .main_content_header .main_talk h4 {
+  color: #ffffff;
+  font-family: "Roboto Slab", serif;
+}
+
+.head .main_content_header .main_talk h2 {
+  font-size: 36px;
+}
+
+.head .main_content_header .main_talk .span {
+  color: #FF0099;
+}
+
+.head .main_content_header .main_talk .spanP {
+  color: #9104ff;
+}
+
+.head .main_content_header .image_logo {
+  height: 40vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 10px;
+}
+
+.head .navbar_Open {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background: #000000e1;
+  z-index: 20;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  height: 10vh;
+}
+
+.head .navbar_Open .title .main_title {
+  color: #fff;
+}
+
+.headlight {
+  background: #fff;
+}
+
+.work, .community, .Resume, .about_me {
+  background: #111;
+  min-height: 200vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+}
+
+.work .main_work_title_and_logo,
+.work .main_community_title_and_logo,
+.work .main_resume_title_and_logo,
+.work .main_about_title_and_logo, .community .main_work_title_and_logo,
+.community .main_community_title_and_logo,
+.community .main_resume_title_and_logo,
+.community .main_about_title_and_logo, .Resume .main_work_title_and_logo,
+.Resume .main_community_title_and_logo,
+.Resume .main_resume_title_and_logo,
+.Resume .main_about_title_and_logo, .about_me .main_work_title_and_logo,
+.about_me .main_community_title_and_logo,
+.about_me .main_resume_title_and_logo,
+.about_me .main_about_title_and_logo {
+  height: 60px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-bottom: 40px;
+}
+
+.work .main_work_title_and_logo .work_section_title,
+.work .main_work_title_and_logo .community_section_title,
+.work .main_work_title_and_logo .resume_section_title,
+.work .main_work_title_and_logo .about_section_title,
+.work .main_community_title_and_logo .work_section_title,
+.work .main_community_title_and_logo .community_section_title,
+.work .main_community_title_and_logo .resume_section_title,
+.work .main_community_title_and_logo .about_section_title,
+.work .main_resume_title_and_logo .work_section_title,
+.work .main_resume_title_and_logo .community_section_title,
+.work .main_resume_title_and_logo .resume_section_title,
+.work .main_resume_title_and_logo .about_section_title,
+.work .main_about_title_and_logo .work_section_title,
+.work .main_about_title_and_logo .community_section_title,
+.work .main_about_title_and_logo .resume_section_title,
+.work .main_about_title_and_logo .about_section_title, .community .main_work_title_and_logo .work_section_title,
+.community .main_work_title_and_logo .community_section_title,
+.community .main_work_title_and_logo .resume_section_title,
+.community .main_work_title_and_logo .about_section_title,
+.community .main_community_title_and_logo .work_section_title,
+.community .main_community_title_and_logo .community_section_title,
+.community .main_community_title_and_logo .resume_section_title,
+.community .main_community_title_and_logo .about_section_title,
+.community .main_resume_title_and_logo .work_section_title,
+.community .main_resume_title_and_logo .community_section_title,
+.community .main_resume_title_and_logo .resume_section_title,
+.community .main_resume_title_and_logo .about_section_title,
+.community .main_about_title_and_logo .work_section_title,
+.community .main_about_title_and_logo .community_section_title,
+.community .main_about_title_and_logo .resume_section_title,
+.community .main_about_title_and_logo .about_section_title, .Resume .main_work_title_and_logo .work_section_title,
+.Resume .main_work_title_and_logo .community_section_title,
+.Resume .main_work_title_and_logo .resume_section_title,
+.Resume .main_work_title_and_logo .about_section_title,
+.Resume .main_community_title_and_logo .work_section_title,
+.Resume .main_community_title_and_logo .community_section_title,
+.Resume .main_community_title_and_logo .resume_section_title,
+.Resume .main_community_title_and_logo .about_section_title,
+.Resume .main_resume_title_and_logo .work_section_title,
+.Resume .main_resume_title_and_logo .community_section_title,
+.Resume .main_resume_title_and_logo .resume_section_title,
+.Resume .main_resume_title_and_logo .about_section_title,
+.Resume .main_about_title_and_logo .work_section_title,
+.Resume .main_about_title_and_logo .community_section_title,
+.Resume .main_about_title_and_logo .resume_section_title,
+.Resume .main_about_title_and_logo .about_section_title, .about_me .main_work_title_and_logo .work_section_title,
+.about_me .main_work_title_and_logo .community_section_title,
+.about_me .main_work_title_and_logo .resume_section_title,
+.about_me .main_work_title_and_logo .about_section_title,
+.about_me .main_community_title_and_logo .work_section_title,
+.about_me .main_community_title_and_logo .community_section_title,
+.about_me .main_community_title_and_logo .resume_section_title,
+.about_me .main_community_title_and_logo .about_section_title,
+.about_me .main_resume_title_and_logo .work_section_title,
+.about_me .main_resume_title_and_logo .community_section_title,
+.about_me .main_resume_title_and_logo .resume_section_title,
+.about_me .main_resume_title_and_logo .about_section_title,
+.about_me .main_about_title_and_logo .work_section_title,
+.about_me .main_about_title_and_logo .community_section_title,
+.about_me .main_about_title_and_logo .resume_section_title,
+.about_me .main_about_title_and_logo .about_section_title {
+  font-family: "Roboto Slab", serif;
+  color: #ffffff;
+  z-index: 1;
+  position: relative;
+  button: 10px;
+}
+
+.work .main_work_title_and_logo .curkil,
+.work .main_community_title_and_logo .curkil,
+.work .main_resume_title_and_logo .curkil,
+.work .main_about_title_and_logo .curkil, .community .main_work_title_and_logo .curkil,
+.community .main_community_title_and_logo .curkil,
+.community .main_resume_title_and_logo .curkil,
+.community .main_about_title_and_logo .curkil, .Resume .main_work_title_and_logo .curkil,
+.Resume .main_community_title_and_logo .curkil,
+.Resume .main_resume_title_and_logo .curkil,
+.Resume .main_about_title_and_logo .curkil, .about_me .main_work_title_and_logo .curkil,
+.about_me .main_community_title_and_logo .curkil,
+.about_me .main_resume_title_and_logo .curkil,
+.about_me .main_about_title_and_logo .curkil {
+  height: 50px;
+  width: 50px;
+  background: #5519f8bb;
+  border-radius: 50%;
+  position: relative;
+  left: 30px;
+  button: 20px;
+}
+
+.work .main_work_title_and_logo .Skills .skills_title,
+.work .main_community_title_and_logo .Skills .skills_title,
+.work .main_resume_title_and_logo .Skills .skills_title,
+.work .main_about_title_and_logo .Skills .skills_title, .community .main_work_title_and_logo .Skills .skills_title,
+.community .main_community_title_and_logo .Skills .skills_title,
+.community .main_resume_title_and_logo .Skills .skills_title,
+.community .main_about_title_and_logo .Skills .skills_title, .Resume .main_work_title_and_logo .Skills .skills_title,
+.Resume .main_community_title_and_logo .Skills .skills_title,
+.Resume .main_resume_title_and_logo .Skills .skills_title,
+.Resume .main_about_title_and_logo .Skills .skills_title, .about_me .main_work_title_and_logo .Skills .skills_title,
+.about_me .main_community_title_and_logo .Skills .skills_title,
+.about_me .main_resume_title_and_logo .Skills .skills_title,
+.about_me .main_about_title_and_logo .Skills .skills_title {
+  color: #fff;
+}
+
+.work .all_porjects, .work .all_community_stuff, .community .all_porjects, .community .all_community_stuff, .Resume .all_porjects, .Resume .all_community_stuff, .about_me .all_porjects, .about_me .all_community_stuff {
+  width: 80%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.work .all_porjects .workone,
+.work .all_porjects .workTow,
+.work .all_porjects .workThree,
+.work .all_porjects .workFour,
+.work .all_porjects .workFive,
+.work .all_porjects .community_one,
+.work .all_porjects .community_tow, .work .all_community_stuff .workone,
+.work .all_community_stuff .workTow,
+.work .all_community_stuff .workThree,
+.work .all_community_stuff .workFour,
+.work .all_community_stuff .workFive,
+.work .all_community_stuff .community_one,
+.work .all_community_stuff .community_tow, .community .all_porjects .workone,
+.community .all_porjects .workTow,
+.community .all_porjects .workThree,
+.community .all_porjects .workFour,
+.community .all_porjects .workFive,
+.community .all_porjects .community_one,
+.community .all_porjects .community_tow, .community .all_community_stuff .workone,
+.community .all_community_stuff .workTow,
+.community .all_community_stuff .workThree,
+.community .all_community_stuff .workFour,
+.community .all_community_stuff .workFive,
+.community .all_community_stuff .community_one,
+.community .all_community_stuff .community_tow, .Resume .all_porjects .workone,
+.Resume .all_porjects .workTow,
+.Resume .all_porjects .workThree,
+.Resume .all_porjects .workFour,
+.Resume .all_porjects .workFive,
+.Resume .all_porjects .community_one,
+.Resume .all_porjects .community_tow, .Resume .all_community_stuff .workone,
+.Resume .all_community_stuff .workTow,
+.Resume .all_community_stuff .workThree,
+.Resume .all_community_stuff .workFour,
+.Resume .all_community_stuff .workFive,
+.Resume .all_community_stuff .community_one,
+.Resume .all_community_stuff .community_tow, .about_me .all_porjects .workone,
+.about_me .all_porjects .workTow,
+.about_me .all_porjects .workThree,
+.about_me .all_porjects .workFour,
+.about_me .all_porjects .workFive,
+.about_me .all_porjects .community_one,
+.about_me .all_porjects .community_tow, .about_me .all_community_stuff .workone,
+.about_me .all_community_stuff .workTow,
+.about_me .all_community_stuff .workThree,
+.about_me .all_community_stuff .workFour,
+.about_me .all_community_stuff .workFive,
+.about_me .all_community_stuff .community_one,
+.about_me .all_community_stuff .community_tow {
+  height: 350px;
+  width: 225px;
+  margin-top: 20px;
+  border-radius: 27px;
+  border: 5px solid #5319F8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+}
+
+.work .all_porjects .workContainer, .community .all_porjects .workContainer, .Resume .all_porjects .workContainer, .about_me .all_porjects .workContainer {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  width: 330px;
+  height: 240px;
+}
+
+.work .all_porjects .workContainer a, .community .all_porjects .workContainer a, .Resume .all_porjects .workContainer a, .about_me .all_porjects .workContainer a {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 240px;
+  width: 330px;
+  padding: 5px;
+}
+
+.work .all_porjects .workContainer a img, .community .all_porjects .workContainer a img, .Resume .all_porjects .workContainer a img, .about_me .all_porjects .workContainer a img {
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+}
+
+.Resume .Skills .skills_title {
+  color: #fff;
+}
+
+.community {
+  min-height: 60vh;
+  width: 100%;
+  padding: 20px;
+  background: #111;
+}
+
+.community .main_community_title_and_logo .curkil {
+  background: #19F8CF;
+}
+
+.community .all_community_stuff .community_one {
+  height: 540px;
+  border-color: #19F8CF;
+}
+
+.community .all_community_stuff .community_tow {
+  border-color: #19F8CF;
+}
+
+.community .all_community_stuff .communityStuff {
+  height: 300px;
+  width: 300px;
+}
+
+.Resume {
+  min-height: 140vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Resume .Skills {
+  width: 60%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.Resume .Skills .skills_title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.Resume .main_resume_title_and_logo .curkil {
+  background: #F819B9;
+}
+
+.Resume .main_skills_comtainer {
+  height: 80%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Resume .main_skills_comtainer .Design,
+.Resume .main_skills_comtainer .Development,
+.Resume .main_skills_comtainer .Tools,
+.Resume .main_skills_comtainer .Linux {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 250px;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.Resume .main_skills_comtainer .Design .Design_title, .Resume .main_skills_comtainer .Design .Development_title, .Resume .main_skills_comtainer .Design .Tools_title, .Resume .main_skills_comtainer .Design .Linux_title, .Resume .main_skills_comtainer .Development .Design_title, .Resume .main_skills_comtainer .Development .Development_title, .Resume .main_skills_comtainer .Development .Tools_title, .Resume .main_skills_comtainer .Development .Linux_title, .Resume .main_skills_comtainer .Tools .Design_title, .Resume .main_skills_comtainer .Tools .Development_title, .Resume .main_skills_comtainer .Tools .Tools_title, .Resume .main_skills_comtainer .Tools .Linux_title, .Resume .main_skills_comtainer .Linux .Design_title, .Resume .main_skills_comtainer .Linux .Development_title, .Resume .main_skills_comtainer .Linux .Tools_title, .Resume .main_skills_comtainer .Linux .Linux_title {
+  color: #F819B9;
+  margin-bottom: 15px;
+}
+
+.Resume .main_skills_comtainer .Design .Design_ulbar,
+.Resume .main_skills_comtainer .Design .development_ulbar,
+.Resume .main_skills_comtainer .Design .Tools_ulbar,
+.Resume .main_skills_comtainer .Design .Linux_ulbar, .Resume .main_skills_comtainer .Development .Design_ulbar,
+.Resume .main_skills_comtainer .Development .development_ulbar,
+.Resume .main_skills_comtainer .Development .Tools_ulbar,
+.Resume .main_skills_comtainer .Development .Linux_ulbar, .Resume .main_skills_comtainer .Tools .Design_ulbar,
+.Resume .main_skills_comtainer .Tools .development_ulbar,
+.Resume .main_skills_comtainer .Tools .Tools_ulbar,
+.Resume .main_skills_comtainer .Tools .Linux_ulbar, .Resume .main_skills_comtainer .Linux .Design_ulbar,
+.Resume .main_skills_comtainer .Linux .development_ulbar,
+.Resume .main_skills_comtainer .Linux .Tools_ulbar,
+.Resume .main_skills_comtainer .Linux .Linux_ulbar {
+  height: 80%;
+}
+
+.Resume .main_skills_comtainer .Design .Design_ulbar li,
+.Resume .main_skills_comtainer .Design .development_ulbar li,
+.Resume .main_skills_comtainer .Design .Tools_ulbar li,
+.Resume .main_skills_comtainer .Design .Linux_ulbar li, .Resume .main_skills_comtainer .Development .Design_ulbar li,
+.Resume .main_skills_comtainer .Development .development_ulbar li,
+.Resume .main_skills_comtainer .Development .Tools_ulbar li,
+.Resume .main_skills_comtainer .Development .Linux_ulbar li, .Resume .main_skills_comtainer .Tools .Design_ulbar li,
+.Resume .main_skills_comtainer .Tools .development_ulbar li,
+.Resume .main_skills_comtainer .Tools .Tools_ulbar li,
+.Resume .main_skills_comtainer .Tools .Linux_ulbar li, .Resume .main_skills_comtainer .Linux .Design_ulbar li,
+.Resume .main_skills_comtainer .Linux .development_ulbar li,
+.Resume .main_skills_comtainer .Linux .Tools_ulbar li,
+.Resume .main_skills_comtainer .Linux .Linux_ulbar li {
+  font-family: "Roboto Slab", serif;
+  padding: 5px;
+  color: #fff;
+}
+
+.Resume .main_skills_comtainer .Design .Tools_ulbar, .Resume .main_skills_comtainer .Development .Tools_ulbar, .Resume .main_skills_comtainer .Tools .Tools_ulbar, .Resume .main_skills_comtainer .Linux .Tools_ulbar {
+  height: 90%;
+}
+
+.Resume .Download_resume {
+  min-height: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Resume .Download_resume button {
+  width: 80%;
+  height: 35px;
+  color: #F819B9;
+  border: 2px solid #F819B9;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: "Roboto Slab", serif;
+  background: none;
+}
+
+.about_me {
+  min-height: 160vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.about_me .main_about_title_and_logo .curkil {
+  background: #F86919;
+}
+
+.about_me .main_content_about_me {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about_me .main_content_about_me .whoAmI,
+.about_me .main_content_about_me .whatAmI_passionate_about,
+.about_me .main_content_about_me .WhatDoIDo {
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.about_me .main_content_about_me .whoAmI .who_am_i,
+.about_me .main_content_about_me .whoAmI .what_am_i_passionate_about,
+.about_me .main_content_about_me .whoAmI .what_do_i_do,
+.about_me .main_content_about_me .whatAmI_passionate_about .who_am_i,
+.about_me .main_content_about_me .whatAmI_passionate_about .what_am_i_passionate_about,
+.about_me .main_content_about_me .whatAmI_passionate_about .what_do_i_do,
+.about_me .main_content_about_me .WhatDoIDo .who_am_i,
+.about_me .main_content_about_me .WhatDoIDo .what_am_i_passionate_about,
+.about_me .main_content_about_me .WhatDoIDo .what_do_i_do {
+  font-family: "Roboto Slab", serif;
+  margin-bottom: 20px;
+  font-size: 48px;
+  color: #F86919;
+}
+
+.about_me .main_content_about_me .whoAmI .answer_who_am_i,
+.about_me .main_content_about_me .whoAmI .answerOne_what_am_i_passionate_about,
+.about_me .main_content_about_me .whoAmI .answerTow_what_am_i_passionate_about,
+.about_me .main_content_about_me .whoAmI .answer_what_do_i_do,
+.about_me .main_content_about_me .whatAmI_passionate_about .answer_who_am_i,
+.about_me .main_content_about_me .whatAmI_passionate_about .answerOne_what_am_i_passionate_about,
+.about_me .main_content_about_me .whatAmI_passionate_about .answerTow_what_am_i_passionate_about,
+.about_me .main_content_about_me .whatAmI_passionate_about .answer_what_do_i_do,
+.about_me .main_content_about_me .WhatDoIDo .answer_who_am_i,
+.about_me .main_content_about_me .WhatDoIDo .answerOne_what_am_i_passionate_about,
+.about_me .main_content_about_me .WhatDoIDo .answerTow_what_am_i_passionate_about,
+.about_me .main_content_about_me .WhatDoIDo .answer_what_do_i_do {
+  font-family: "Roboto Slab", serif;
+  font-size: 24px;
+  color: #fff;
+}
+
+.about_me .main_content_about_me .whatAmI_passionate_about {
+  height: 40%;
+}
+
+.letTalk {
+  height: 100vh;
+  width: 100%;
+  padding: 20px;
+  background: #111;
+}
+
+.letTalk .main_contact_container {
+  height: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.letTalk .main_contact_container .O {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: lightgreen;
+}
+
+.letTalk .main_contact_container .contact_title_main {
+  font-family: "Roboto Slab", serif;
+  position: relative;
+  right: 30px;
+  top: 6px;
+  color: #fff;
+}
+
+.letTalk .main_lets_talk_section {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80%;
+  padding: 20px;
+}
+
+.letTalk .main_lets_talk_section .main_my_email {
+  width: 100%;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.letTalk .main_lets_talk_section .main_my_email h4 {
+  font-family: "Roboto Slab", serif;
+  color: #fff;
+}
+
+.letTalk .main_lets_talk_section .form_lets_talk {
+  height: 80%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.letTalk .main_lets_talk_section .form_lets_talk input, .letTalk .main_lets_talk_section .form_lets_talk textarea {
+  width: 100%;
+  margin-top: 20px;
+  height: 50px;
+  background: none;
+  border: 3px solid lightgreen;
+  border-radius: 15px;
+  padding: 20px;
+  font-size: 18px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.letTalk .main_lets_talk_section .form_lets_talk input:focus, .letTalk .main_lets_talk_section .form_lets_talk textarea:focus {
+  outline: none;
+}
+
+.letTalk .main_lets_talk_section .form_lets_talk textarea {
+  height: 50%;
+}
+
+.letTalk .main_lets_talk_section .form_lets_talk .sub {
+  padding: 0;
+}
+
+@media screen and (min-width: 1120px) {
+  .head .navbar .hamp {
+    display: none;
+  }
+  .head .navbar .ulbar {
+    position: static;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 100%;
+    background: none;
+  }
+  .head .navbar .ulbar .liLinks .ulLinks {
+    font-size: 18px;
+  }
+  .head .navbar .ulbar img {
+    display: none;
+  }
+  .head .navbar_Open {
+    height: 8vh;
+  }
+  .head .main_content_header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 80vh;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .work .all_porjects {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 20px;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .work .all_porjects .workContainer {
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    width: 330px;
+    height: 240px;
+  }
+  .work .all_porjects .workContainer a {
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 240px;
+    width: 330px;
+    padding: 5px;
+  }
+  .work .all_porjects .workContainer a img {
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+  }
+  .work .all_porjects .workContainerHover {
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    background: #fff;
+  }
+  .community {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .community .all_community_stuff {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .community .all_community_stuff .communityStuff {
+    height: 300px;
+    width: 300px;
+  }
+  .Resume {
+    min-width: 100vh;
+  }
+  .Resume .main_skills_comtainer {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    margin-top: 100px;
+    grid-gap: 20px;
+  }
+  .Resume .Download_resume {
+    width: 80%;
+  }
+  .Resume .Download_resume button {
+    width: 80%;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  .Resume .Download_resume button:hover {
+    background: #FF0099;
+    color: #111;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+}
+/*# sourceMappingURL=style.css.map */
